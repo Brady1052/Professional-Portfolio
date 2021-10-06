@@ -1,0 +1,22 @@
+body {
+
+}
+.nav {
+font-family: Arial;
+
+}
+.header {
+ background-color:black;  
+ border:5px solid red;
+}
+#name {
+background-color: black;  
+color:red;
+text-decoration:underline;
+}
+#profile-picture {
+ position: absolute;    
+ top: 50px;
+right: 100px;
+border-radius: 1000px;
+}
