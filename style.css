@@ -11,6 +11,7 @@ height:100px;
    
 }  
 #nav {
+color:red;    
 font-family: Arial;
 position:relative;
 left: 1210px;
@@ -24,12 +25,16 @@ color:red;
 text-decoration:underline;
 }
 #profile-picture {
-display:;
 max-width: 100px;
 height: auto;
 position:relative;
 left:240px;
 bottom:60px;
+border-radius: 1000px;
+}
+#firstwork {
+max-width: 500px;
+height:auto;    
 }
 .main {
 
