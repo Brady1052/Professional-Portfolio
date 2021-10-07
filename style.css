@@ -1,22 +1,40 @@
 body {
-
-}
-.nav {
-font-family: Arial;
-
+border:5px solid red;
 }
 .header {
  background-color:black;  
- border:5px solid red;
+border:3px solid red;
+width:1410px;
+height:100px;
+}
+#title {
+   
+}  
+#nav {
+font-family: Arial;
+position:relative;
+left: 1210px;
+bottom:80px;
 }
 #name {
+position: relative;
+top:40px;   
 background-color: black;  
 color:red;
 text-decoration:underline;
 }
 #profile-picture {
- position: absolute;    
- top: 50px;
-right: 100px;
-border-radius: 1000px;
+display:;
+max-width: 100px;
+height: auto;
+position:relative;
+left:240px;
+bottom:60px;
+}
+.main {
+
+
+}
+#aboutmeheader {
+
 }
