@@ -6,11 +6,15 @@
 h3 {
     text-align: center;
 }
-
-body {
-    display: flex;
-    flex-wrap: wrap;
+p {
+    text-align: center;
 }
+
+/* body {   
+display: flex;
+flex-wrap: wrap;
+} */
+
 #header {
 
 }
@@ -35,6 +39,7 @@ text-align: center;
     position:relative;
     left:1229px;
     background-color: black;
+    z-index: 1;
 }
 
 #profilepicBackground {
@@ -42,11 +47,11 @@ text-align: center;
     height: 200px;
     position:relative;
     bottom:70px;
-    z-index: -1;
+    z-index: -3;
 }
 
 #headerBackgroundImage {
-width:1500px;
+width: 1550px;
 height:175px;
 position: relative;
 bottom:200px;
@@ -62,32 +67,41 @@ color:red;
 text-decoration:underline;
 }
 
-#spotiweather{
-max-width: 850px;
-height:auto; 
-position:relative;
-left:300px;   
+#spotiweather{   
+width:65%;          
+height:auto;  
+margin: auto;
+display:block;
+}
+#movie_db{
+width:75%;
+height:auto;  
+margin: auto;
+display:block;
 }
 
 #work{
     text-align: center;
 }
+
+.firstProject{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+
 #firstWorktxt {
     text-align: center;
 }
 #weather-dashboard{
     max-width:550px;
-    height: auto;
-    position:relative;
-    left:430px;
-    
+    height: auto;    
 }
 
-#workDayimg{
+#workDayimg {
     max-width:600px;
     height:auto;
-    position: relative;
-    left: 400px;
 }
 
 #aboutmeheader {
@@ -98,12 +112,10 @@ text-align: center;
     text-align: center;
 }
 
-
-
-
-#phoneNumber{
+#phoneNumber {
     text-align: center;
 }
+
 #emailAddress {
     text-align: center;
 }

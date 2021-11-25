@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <div class="flex-container">
-
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Professional Portfolio</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-        <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
     </head>
 
     <body>
@@ -62,54 +60,80 @@
 
 
 <main>
-<!-- About Me Section -->
-<div>
-    <h1 id="aboutmeheader">About Me</h1>
-    <p id="pAboutMe">
-        I am currently enrolled in Ohio State's web development bootcamp program, and once finished will
-        continue my education surrounding web development. I also have a BAS in Psychology from Ohio
-        University.
-        I plan on combining my fascination with Psychology, and passion for web development to become a
-        leader in the workforce. Combining Psychology
-        with web development also helps me create pleasing finished products for clients.
-    </p>
-</div>
-
-<!-- Section containing information about my applications and projects -->
-<!-- Spotiweather -->
-<div>
+    <!-- About Me Section -->
+    <div>
+        <h1 id="aboutmeheader">About Me</h1>
+        <p id="pAboutMe">
+            I am currently enrolled in Ohio State's web development bootcamp program, and once finished will
+            continue my education surrounding web development. I also have a BAS in Psychology from Ohio
+            University.
+            I plan on combining my fascination with Psychology, and passion for web development to become a
+            leader in the web development workforce.
+        </p>
+    </div>
+    <!-- Section containing information about my applications and projects -->
     <h1 id="work">Work</h1>
-    <br>
-    <h1>SpotiWeather</h1>
-    <h3 id="firstWorktxt">Below is a application created by my group and I that allows users to search for
-        the weather of a city and
-        pair it with music<br>
-        <a href="https://github.com/Brady1052/API-Project-1">Click Here to see Repository</a>
-    </h3>
-    <a href=" https://brady1052.github.io/API-Project-1/"> <img id="spotiweather" src="Images/Project 1.png"
-            alt="first work portfolio"></a>
-    <!-- <img id="firstwork" src="Images/Project 1.png" alt="first work portfolio">
-                                     -->
+    <!-- The Movie DB -->
+    <div>
+        <h1 id= "firstWorkText">The Movie DB</h1>
+        <p>Below is "The Movie DB". An application created by my group and I that allows users to see and leave reviews for movies.
+            The application allows users to create an account, and/or login if they want to leave reviews. I highly recommend checking out
+        website, and our repository. We used a wide range of technologies to create this website. Two of them being SQL and Handlebar.
+       We also used bcrpyt to hash the user's password for an added later of protection and security.
+     </p>
+        <div class="firstProject">
+            <a href="https://github.com/Brady1052/Group-Project-2">Click Here to see Repository</a>
+            <a href="https://arcane-basin-64105.herokuapp.com/"> <img id="movie_db" src="Images/The Movie DB.png" alt="The Movie DB Image"></a>
+    
+        </div>
+   
+    <!-- Spotiweather -->
+    <div>
+        <h3 id="firstWorktxt">SpotiWeather</h3>
+
+        <p>Below is a application created by my group and I that allows users to search for
+            the weather of a city and
+            pair it with music. It was created using HTML,CSS, Bootstrap (CSS styling framework), and javascript. We
+            used the Open Weather API, and the YouTube API synchronistically. The Open Weather API was used to tell our
+            application what the weather was like. And the YouTube API was used to find music. For example, a user might
+            search Miami, and the weather happens to be sunny that day. The background of the application will change
+            themes, and a song from YouTube will load that supplements the weather.
+        </p>
+        <br>
+        <div class="firstProject">
+            <a href="https://github.com/Brady1052/API-Project-1">Click Here to see Repository</a>
+            <a href=" https://brady1052.github.io/API-Project-1/"> <img id="spotiweather" src="Images/Project 1.png"
+                    alt="first work portfolio"></a>
+        </div>
+    </div>
+    </div>
+
+    </div>
+                                 
     <!-- Weather Dashboard -->
     <div>
         <br>
-        <h1>Weather Dashboard</h1>
+        <h3>Weather Dashboard</h3>
         <h3>This application was created by fetching the Open Weather API, and
             displaying it's data to the user.<br>
-            <a href="https://github.com/Brady1052/Weather-Dashboard">Click Here to see Repository</a>
         </h3>
+        <div class ="firstProject">
+        <a href="https://github.com/Brady1052/Weather-Dashboard">Click Here to see Repository</a>
+        
         <a href="https://brady1052.github.io/Weather-Dashboard/"><img id="weather-dashboard"
                 src="Images/Weather Dashboard.png" alt="Weather Dashboard Image"></a>
+        </div>
     </div>
     <!-- Work Day Scheduler -->
     <div>
-        <h1>Work Day Scheduler</h1>
-        <h3> Below is an application I made for scheduling your day in one hour increments
-            <br>
-            <a href="https://github.com/Brady1052/Work-Day-Scheduler">Click Here to see Repository</a>
-        </h3>
+        <h3>Work Day Scheduler</h3>
+        <h3> Below is an application I made for scheduling your day in one hour increments</h3>
+        <div class="firstProject">
+         <a href="https://github.com/Brady1052/Work-Day-Scheduler">Click Here to see Repository</a>
+        
         <a href="https://brady1052.github.io/Work-Day-Scheduler/"><img id="workDayimg"
                 src="Images/Work Day Scheduler.png" alt="Work Day Scheduler"></a>
+                </div>
     </div>
     <!-- Contact Information Section -->
     <div>
@@ -125,6 +149,7 @@
         crossorigin="anonymous"></script>
     <script src="script.js"></script>
     </body>
-</div>
+    </div>
 </main>
+
 </html>
