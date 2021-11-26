@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<div class="flex-container">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +10,9 @@
     </head>
 
     <body>
+        <div class="flex-container">
         <header id="header">
+                                 <!-- Navbar -->
             <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <!-- <div class="container-fluid"> -->
                 <a class="navbar-brand" href="#">Brady Buchholz</a>
@@ -31,21 +32,15 @@
                         <li class="nav-item">
                             <a class="nav-link active" href="#contactme">Contact</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdownMenuLink"
-                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Find out more
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item"
-                                        href="https://www.linkedin.com/in/brady-buchholz-032b3a221/">LinkedIn</a></li>
-                                <li><a class="dropdown-item"
-                                        href="https://github.com/Brady1052?tab=repositories">GitHub</a></li>
-                                <li><a class="dropdown-item" 
-                                        href="https://docdro.id/4Ojlk05">Resume</a></li>
-                            </ul>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="https://www.linkedin.com/in/brady-buchholz-032b3a221/">LinkedIn</a>
                         </li>
-                    </ul>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="https://github.com/Brady1052?tab=repositories">GitHub</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="https://docdro.id/4Ojlk05">Resume</a>
+                        </li>
                 </div>
 </div>
 </nav>
@@ -53,9 +48,10 @@
     <img id="profilePicture"
         src="https://media-exp1.licdn.com/dms/image/C4E03AQGWzMq8ajwOWA/profile-displayphoto-shrink_800_800/0/1632607521954?e=1640822400&v=beta&t=uAu9M5kBZoUWPbINIqt3eImMaccuyc0qjyU5BX643Ao"
         alt="Profile Picture">
-    <img id="headerBackgroundImage"
+    
+    <!-- <img id="headerBackgroundImage"
         src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ8NDQ0NFREWFhURFRUYHSggGBolGxMVITEhJSk3Li4uFx8zODMsNygtLisBCgoKBQUFDgUFDisZExkrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIALEBHAMBIgACEQEDEQH/xAAaAAEBAQEBAQEAAAAAAAAAAAAAAQIDBAUH/8QAIRABAQEBAAICAwEBAQAAAAAAABEBAgMSIUExUXGRsWH/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A/JQUEaRQXluMY6cgY1iRrAXMbzExrMAxVARcFBzUb44/YJzzXXnjMXAFQAAQFEAUQBRAAEBUAFQoAAD5ShgKCgY6cMY1yDpFwxYDWNYzjeAqKAJ1+Fbzn8UGeOPvXRKlBqolKCiFBRKUFEpQUSpQaSpSgtRDdBaVmlBpKlSg1Ss1czf1v+A+cuIoCooK1jOKDty3jnzrfILjeMrgNCNcc/YNcc/Z1rW7McqDVKzSg1UrNKDVKzSg1Ss0oNUrNKDVSpVBUqbqboLRmmfILSrnP7awGc51rOFqUGsmLWKUHzVZUFVAGlZUHTjXTHHnXXNB0xcZ51ufP9BecroZkN0GPJv0xU66upQaKzSg0VmlBqlYpQapWaUGquGc/v8Aw3QVN1KyC7oQoLzy3WalBqlYpQapWKUG6Vz3U9geQAFVlQVWVoN866ZrjzrpzoOvOvT48efxY9OA105eTqZ/fh115PL3d/8AM+MBKVkBqlZAapWSg1UqVrx8b1/P2Bzm7+HXOcz+/tqZmTGOtA3Wd1AAqbqUGqYxVoNVKlSg1UrNSg1U3pnemaDVWsUoOKsqCiAKJSg1y6cOXOu/iwHo8Tvy48OmdT50Dz9zJ968la77u1jQWlZAaSpSgtKy7ePx/egvj8d+d/DuyboJ1rnrXWs0BN1N1mgtSpUoNYrOFBUGN6BrdY3pndSg1Ss0BatYWgwggKVCgolSg6+PHo4cvHkx15B25Y8vkvx9M9d/WMUFpqUoJSpoC0xM+XbjmAvj4n9dcYxqg1Wd1N1mgbqbqbrO6C7rJUoKiVcBTdjHXkzPx8/8c92g312yzQFEoC1EAWjO6nsCFZoDVSolBqtePLrnXfjJgOmNe0c6UGqVmlBqlZpQXdM+UXNB05bzXLNaoOtPZy9j2B0qbrHsm6DW6m6zUoNVKzWd7/QN7uYx15N3+MbqUFpUpQWrWfbE9gbSsVMBv2SoAAAyiAKIuA3xjpWMKDdKzSg1Ss1KDdKxVoN1a51aDpV9nOlB0pXOlB0pWKewNVne2OumaDW9VKz7JQa3U9mdAX2EUBUUAAFEAUQBzEUFXGWsBqlZAapWQGqVkBqlZAbpWQGqVmlBulc/YoN72m6ygNVEAUQBRAFVAFEAaEKCiAKMrgMIALipigAAAAAAAgKJQFqUAAAAAAQFAAVAFEAWlRQAAUQBRAGRQBQAAAABFAEAAAAAAAAAAAAAAAAAAFAQUARQEXAB/9k="
-        alt="Header Background Image">
+        alt="Header Background Image"> -->
 </div>
 </header>
 
@@ -78,10 +74,11 @@
     <div>
         <h1 id= "firstWorkText">The Movie DB</h1>
         <p>Below is "The Movie DB". An application created by my group and I that allows users to see and leave reviews for movies.
-            The application allows users to create an account, and/or login if they want to leave reviews. I highly recommend checking out
-        website, and our repository. We used a wide range of technologies to create this website. Two of them being SQL and Handlebar.
-       We also used bcrpyt to hash the user's password for an added later of protection and security.
-     </p>
+            The application allows users to create an account, and/or login if they want to leave reviews. Below is a link to the website, and our repository. 
+            </p>
+            <p>
+            Tools / languages used: Handlebars.js, Node & Express Web Server, SQL, Get and Post Routes, Heroku, Sessions, Bcrypt (to hash the user’s password in the database)
+                </p>
         <div class="firstProject">
             <a href="https://github.com/Brady1052/Group-Project-2">Click Here to see Repository</a>
             <a href="https://arcane-basin-64105.herokuapp.com/"> <img id="movie_db" src="Images/The Movie DB.png" alt="The Movie DB Image"></a>
@@ -151,6 +148,7 @@
     <script src="script.js"></script>
     </body>
     </div>
+
 </main>
 
 </html>
